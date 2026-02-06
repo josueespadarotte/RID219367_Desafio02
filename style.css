@@ -198,27 +198,23 @@ u:hover{
     #corpo {
         grid-template-columns: 1fr;
         gap: 1rem;
-        justify-items: center;
-        margin: 0 .5rem;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         padding-top: 1rem;
+        place-items: center;
     }
     #introdução{
-        padding: 0.5rem;
-        margin: 0 .5rem 0 .5rem;
-        max-width: 95%;
-        min-height: 24.7rem;
+        margin: 0 auto;
+        max-width: 90%;
+        min-height: 20rem;
         background-position: center;
     }
-
     #postsPopular, .cards, #categorias {
         width: 100%;
         max-width: 99%;
         height: auto;
-
     }
-
     #cards {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -252,6 +248,7 @@ u:hover{
         gap: 1.5rem;
     }
     #introdução {
+
         width: 100%;
         max-width: 93%;
         min-height: 22rem;
@@ -283,4 +280,5 @@ u:hover{
         height: auto;
     }
 }
+
 
