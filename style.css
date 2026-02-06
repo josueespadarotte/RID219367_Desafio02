@@ -61,7 +61,6 @@ h2{
     height: 3rem;
     width: 23rem;
     border-radius: 10px;
-
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -71,23 +70,22 @@ h2{
     margin:0;
 }
 .popularCards{
-    justify-content: space-between;
+
     width: 24rem;
     height: 5.5rem;
     border: 1px transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     display: flex;
+    align-items: flex-start;
     padding: 0.5rem;
     margin-bottom: 1rem;
 }
+.popularCards img{
+    margin-right: 2rem;
+}
 .popularCards h4, data{
     font-size: 0.9rem;
-}
-.popularCards div{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
 }
 footer{
     margin-top: 5rem;
@@ -233,6 +231,10 @@ u:hover{
         justify-items: center;
         margin: .5rem;
     }
+    .popularCards h4, data{
+        font-size: 0.8rem;
+        text-align: initial;
+    }
     #categorias header{
         width: auto;
 
@@ -280,5 +282,4 @@ u:hover{
         height: auto;
     }
 }
-
 
