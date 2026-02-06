@@ -65,7 +65,7 @@ h2{
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #postsPopular h3{
     margin:0;
@@ -75,7 +75,7 @@ h2{
     width: 24rem;
     height: 5.5rem;
     border: 1px transparent;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     display: flex;
     padding: 0.5rem;
@@ -108,7 +108,7 @@ footer h4{
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 #postRecenteHeader{
     border-radius: 10px;
@@ -117,7 +117,7 @@ footer h4{
     margin-bottom: 1rem;
     align-items: center;
     justify-items: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
 }
 #categorias h4{
@@ -129,7 +129,7 @@ footer h4{
 .cards{
     width: 23rem;
     height: 24rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -214,19 +214,31 @@ u:hover{
 
     #postsPopular, .cards, #categorias {
         width: 100%;
+        max-width: 99%;
         height: auto;
+
     }
 
     #cards {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-
+    #postsPopular header{
+        width: 100%;
+        max-width: 90%;
+    }
+    #postsPopular div{
+        width: 100%;
+        max-width: 90%;
+        justify-items: center;
+        align-items: center;
+    }
     #postsPopular {
         justify-items: center;
+        margin: .5rem;
     }
     #categorias header{
-        width: 25.4rem;
+        width: auto;
 
     }
     header{
@@ -236,7 +248,7 @@ u:hover{
 }
 @media only screen and (min-width: 769px) and (max-width: 1220px) {
     #corpo {
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
     }
     #introdução {
@@ -246,15 +258,29 @@ u:hover{
     }
     #postsPopular,
     #categorias {
-        width: 90%;
-        height: auto;
+        width: 70%;
+        max-width: 25rem;
     }
     #cards {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap:.5rem;
+        justify-content: space-between;
+    }
+    #cards div{
+        width: 100%;
+        height: auto;
+        min-width: 5rem;
+    }
+    #cards h3{
+        font-size: 100%;
+        height: auto;
+
     }
     #header h1 {
         margin-left: 1rem;
+    }
+    #postsPopular, .cards, #categorias {
+        width: 100%;
+        height: auto;
     }
 }
 
